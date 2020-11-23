@@ -11,10 +11,11 @@ public class TestClassRoom {
     ClassRoom classroom;
   @Before
   public void setUp(){
-   //   classroom = new ClassRoom();
+   classroom = new ClassRoom();
   }
     @Test
     public void TestClassRoom(){
+    setUp();
       ArrayList<Person> rosterTest = new ArrayList<Person>();
       rosterTest.addAll(ZipCodeWilmington.getInstructors());
       rosterTest.addAll(TechConnect.getStudents());

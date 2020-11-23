@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class ClassRoom {
     ArrayList<Student> students = TechConnect.getStudents();
     ArrayList<Instructor> instructors = ZipCodeWilmington.getInstructors();
-    private HashMap<String, Person> roster = new HashMap<String, Person>();
+    private HashMap<String, Person> roster;
 
     public ClassRoom(){
         roster = new HashMap<String, Person>();
